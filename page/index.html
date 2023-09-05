@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClO'S SHOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@200&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <style>
+      body{
+        font-family: 'Open Sans', sans-serif;
+      }
+    </STyle>
+
+    
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-secondary border-bottom">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+            <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+          </svg>
+          Call Us
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container-fluid text-center ">
+          <a class="navbar-brand mx-5 fw-bold" href="#" style="padding-left: 5.5%;">
+            <img src="../Assets/logo.png" alt="logo" height="45">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+              </svg></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                  <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                  <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                </svg>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <ul class="nav justify-content-center fw-bold py-5">
+        <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" >Home</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>                          
+        </ul>
+        <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+        </ul>
+        <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Shop</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+        </ul>
+        <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Blog</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+        </ul>
+        <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+        </ul>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Contact</a>
+        </li>
+    </ul>
+    <!--Carousel-->
+    <section>
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+    
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="../Assets/Carousel-1.webp" class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase text-dark">From Autentic Collections</p>
+              <h1 class="display-1 fw-bolder text-capitalize text-dark"> OUR COLLABORATION WITH GUESS</h1>
+              <button class="btn btn-secondary px-4 py-2 fs-5 mt-5 text-dark">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="../Assets/Carousel-2.webp" class="d-block w-100 c-img" alt="Slide 2" >
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5 text-dark">88 RISING ALWAYS RISING</p>
+              <p class="display-1 fw-bolder text-capitalize text-dark">MAKE YOUR FASHION MORE THAN HYPE</p>
+              <button class="btn btn-secondary px-4 py-2 fs-5 mt-5 text-dark" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card mb-3 border-light" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 my-4">
+                <img src="../Assets/rocket-takeoff-fill.svg" class="img-fluid rounded-start" alt="..." style="width: 35px; height: 45px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title my-2 fw-bold">FREE DELIVERY</h5>
+                 <p>For Of Orders $300</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 border-light" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 my-4">
+                <img src="../Assets/arrow-counterclockwise.svg" class="img-fluid rounded-start" alt="..."style="width: 35px; height: 50px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title my-2 fw-bold">90 DAYS RETURN</h5>
+                  <P>For Things that broken</P>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 border-light" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 my-4">
+                <img src="../Assets/credit-card.svg" class="img-fluid rounded-start" alt="..." style="width: 35px; height: 50px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title my-2 fw-bold">SECURE PAYMENT</h5>
+                  <P>Get Secure For Shopping</P>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 border-light" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 my-4">
+                <img src="../Assets/chat-dots-fill.svg" class="img-fluid rounded-start" alt="..." style="width: 35px; height: 50px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title my-2 fw-bold">24/7 HOURS</h5>
+                  <P>We Got You Everyday</P>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="row text-center py-3">
+          <div class="col fw-bold fs-4">
+            <h5 class="fw-bold">Shop By Category</h5>
+            <h6 class="text-secondary">Visit Our Website For The Interest Product</h6>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-2">
+                <div class="card">
+                  <img src="../Assets/flash-sale.webp" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Flash Sale</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="card">
+                  <img src="../Assets/double-happiness.webp" class="card-img-top" alt="" style="height: 92px;">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Happiness</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="card">
+                  <img src="../Assets/Hitc.webp" class="card-img-top" alt=""style="height: 92px;">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bold ">Hitc</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="card">
+                  <img src="../Assets/88core.webp" class="card-img-top" alt="" style="height: 92px;">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bold ">88 Core</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="card">
+                  <img src="../Assets/hyper-speed.webp" class="card-img-top" alt="" style="height: 92px;">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Super Hype</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="card">
+                  <img src="../Assets/project88.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bold ">Project 2</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 py-4">
+                <div class="card">
+                  <img src="../Assets/project88banner.jpg" class="card-img" alt="..." style="height: 355px;">
+                  <div class="card-img-overlay" style="margin-top: 150px;">
+                    <h5 class="card-title text-dark fw-bold">88Rising Project 2</h5>
+                    <a href="#"  class="text-dark">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 py-4">
+                <div class="card">
+                  <img src="../Assets/bannerdh.webp" class="card-img" alt="...">
+                  <div class="card-img-overlay" style="margin-top: 150px;">
+                    <h5 class="card-title fw-bold text-dark"> Double Happiness</h5>
+                    <a href="#"  class="text-dark ">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--CardPreContent-->
+      <div class="container">
+        <div class="row text-center py-3">
+          <div class="col fw-bold fs-4">
+            <h5 class="fw-bold">Deals Of The Day</h5>
+            <h6 class="text-secondary">Visit Our Website For The Interest products</h6>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="container">
+          <div class="row">
+        <div class="card mb-3 border-secondary" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../Assets/WarrenTourHoodieFront.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">Warren Black Tour Hoodie</h6>
+                <h4 class="card-text">$42.00 USD</h4>
+                <p class="card-text"><small class="text-muted">Price When Purchased Online</small></p>
+                <a href="#" class="btn btn-secondary">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 mx-2 border-secondary" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../Assets/HITC-2022-BLUE-HOODIE-FRONT.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">HITC 2022 Blue Hoodie</h6>
+                <h4 class="card-text">$67.00 USD</h4>
+                <p class="card-text"><small class="text-muted">Price When Purchased Online</small></p>
+                <a href="#" class="btn btn-secondary">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </section>
+    <!--Content-->
+    <section>
+      <div class="container">
+        <div class="row text-center py-3">
+          <div class="col fw-bold fs-4">
+            <h5 class="fw-bold">Featured Products</h5>
+            <h6 class="text-secondary">Visit Our Website For The Interest Product</h6>
+          </div>
+        </div>
+      </div>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-bold" href="#">HEAD IN THE CLOUDS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-bold" href="#">BY ARTIST</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-bold" href="#">DOUBLE HAPPINESS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-bold" href="#">88 CORE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-bold" href="#">GUESS</a>
+        </li>
+      </ul>
+    </section>
+    <!--CONTENT-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card-group">
+              <div class="card">
+                <img src="../Assets/card1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">$29.00 USD</h5>
+                  <p class="card-text">Warren Black Tour Tee</p>
+                  <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../Assets/card2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">$2.92</h5>
+                  <p class="card-text">Warren BOTY Lighter</p>
+                  <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../Assets/card3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">$8.98</h5>
+                  <p class="card-text">88 Purple Chrome Hoodie</p>
+                  <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../Assets/card4.webp" class="card-img-top" alt="..." >
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">$43.00 USD</h5>
+                  <p class="card-text">Ambush 88 Rising</p>
+                  <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../Assets/card5.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">$140.00 USD</h5>
+                  <p class="card-text">French Terry Hoodie </p>
+                  <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card">
+                <img src="../Assets/card6.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">$50.35 USD</h5>
+                  <p class="card-text">Nicole Black Tour Hoodie</p>
+                  <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../Assets/card7.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">$45.00 USD</h5>
+                  <p class="card-text">The Sailor Album Tee</p>
+                  <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../Assets/card8.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">$10.99</h5>
+                  <p class="card-text">Silver Ring 88Rising</p>
+                  <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../Assets/card9.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">$50.00 USD</h5>
+                  <p class="card-text">White Sillhoutte</p>
+                  <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="../Assets/card10.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">$80.98</h5>
+                  <p class="card-text">Nectar Red Album Hoodie</p>
+                  <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+    <div class="card py-1">
+      <img src="../Assets/lastcard.webp" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h3 class="card-title" style="text-align: center; padding-top: 250px;">Get Our Collections</h3>
+        <h1 class="card-text text-secondary" style="text-align: center;">GET SPRING COLLECTION</h1>
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn btn-secondary">Shop Now</button>
+      </div>
+      </div> 
+    </div>
+    </section>
+    <section>
+      <div class="py-2" style="text-align: center;">
+        <img src="../Assets/Heineken-Logo.png" height="85" alt="" class="my-2 mx-4">
+        <img src="../Assets/Asianmental.png" alt="" height="85">
+        <img src="../Assets/88rising-removebg.png" alt="" height="85">
+        <img src="../Assets/samsung-removebg.png" alt="" >
+        </div>
+    </section>
+    <div class="row text-center py-3">
+      <div class="col fw-bold fs-4">
+        <h5 class="fw-bold">Latest News
+        </h5>
+        <h6 class="text-secondary">Here Some Hot News</h6>
+      </div>
+    </div>
+    <!--news-->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="../Assets/news1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Performing at Coachella, NIKI, Warren Hue and Rich Brian Make History</h5>
+                    <p class="card-text">NIKI, Warren Hue and Rich Brian made history by becoming the first tree solo musicians from Indonesia to successfully perform on the Coachella stage in United States</p>
+                    <a href="#" class="text-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="../Assets/news2REF.jpg" class="card-img-top" alt="..." height="246px">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Friends Like These: bbno$ and Rich Brian</h5>
+                    <p class="card-text">The two artists discuss their recent collaboration 'Edamame' and their shared love for Tyler, the Creator and Kanye West, while also recalling their eventful first live shows.
+                      Even at head in the clouds rich brian brought bbno$ to his stage.
+                    </p>
+                    <a href="#" class="text-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                  <img src="../Assets/news3.webp" class="card-img-top" alt="..." height="246px">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Rich Brian and NIKI Become Headliners for the Head in the Clouds Festival in New York</h5>
+                    <p class="card-text">
+                     88 rising bring their festival head in the cloud to new york the first time .Edicated to celebrating Asian talent,Head in the Clouds will travel to New York for its first installment in the city  in May 20 and 21</p>
+                     <a href="#" class="text-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <section>
+      <!-- Footer -->
+<footer class="text-center text-lg-start bg-light  my-3">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block fw-bold">
+      <span>From 88RISING WITH LOVE</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="#" class="me-4 text-reset">
+        <img src="../Assets/mastercard-26141.png" alt="" height="50" width="100">
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <img src="../Assets/visa-logo-png-2020.png" alt="" height="30" width="100">
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <img src="../Assets/paypal-logo-png-2114.png" alt="" height="30" width="100">
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Location
+          </h6>
+         <p><a href="#" class="text-reset">Manila</a></p>
+        <p> <a href="#" class="text-reset">New York</a></p>
+         <p><a href="#" class="text-reset">Boston</a></p>
+         <p><a href="#" class="text-reset">Los Angels</a></p>
+         <p><a href="#" class="text-reset">Jakarta</a></p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Merchant Central
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Merchant Tools</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Testimonials</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Merchant Sign up</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">From Home</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">How Does It Work</a>
+          </p>
+        </div>
+       
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Information
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">About Us</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Contact Us</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">All Collections</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Blog</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Privacy policy</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            88RISING@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+      </div>
+    </div>
+    <div class="container p-4 pb-0">
+      <section class="">
+        <form action="">
+          <div class="row d-flex ">
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our Website</strong>
+              </p>
+            </div>
+            <div class="col-md-5 col-12">
+              <div class="form-outline mb-4">
+                <input type="email" id="form5Example27" class="form-control" />
+                <label class="form-label" for="form5Example27"></label>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-secondary mb-4">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </section>
+</footer>
+<!-- Footer -->
+<div class="container-fluid bg-secondary">
+<div class="text-center p-3 fw-bold" style="background-color: rgba(0, 0, 0, 0.2);">
+  © 2023 Copyright:
+  <a class="text-dark fw-bold" href="#">88 RISING</a>
+</div>
+</div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
